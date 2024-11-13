@@ -201,6 +201,9 @@
     overflow: hidden;
 }
 
+.cust-button{
+    margin-bottom: 10px;
+}
 
 /* ---------------------------- */
 /* Image Splide CSS */
@@ -274,9 +277,9 @@
     margin-bottom: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
 
-    .cust-button,
+    .cust-button-carousel,
     .title1,
     .title2,
     .description {
@@ -303,6 +306,13 @@
     .col-md-6 img {
         height: 411px;
         max-width: 100%;
+    }
+
+    .sub-icon img {
+        width: auto;  /* Keep the width in proportion */
+        height: 50px; /* Set a fixed height, adjust as needed */
+        max-width: 100%; /* Make sure the image doesn't overflow */
+        object-fit: contain; /* Prevent the image from being stretched */
     }
 }
 
@@ -379,6 +389,10 @@
 
     .container-lg {
         display: none;
+    }
+
+    .container{
+        align-items: center;
     }
 }
 
