@@ -1,0 +1,155 @@
+.Main-Content {
+    width: 100%; /* Ensures the Main-Content div respects the 106px left padding */
+    height: auto; /* Full screen height */
+    padding-right: 0; /* Ensure no extra padding on the right */
+    margin: 0;
+    display: block;
+    box-sizing: border-box; /* Include padding within the width */
+    padding-left: 106px;
+
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ensures the sidebar takes up only 106px width */
+.side-bar {
+    width: 106px !important;
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    font: normal normal bold 14px/24px Roboto;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Helps prevent any overflow issues */
+}
+
+.offcanvas-body, .offcanvas-footer {
+    padding: 0 !important;
+    margin: 0 !important; 
+}
+
+/* hides and positions the side bar menu */
+.submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    background-color: #ffffff;
+    padding: 0;
+    min-width: 150px;
+    width: 1175px;
+    height: 259px;
+    z-index: 1000;
+    border: 1px solid #412814;
+
+}
+
+.has-submenu a {
+    display: inline-block; /* Make the <a> tag behave like a block element */
+}
+
+
+/* on hover display menu */
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+/* switches background color and text when only when hovered */
+.has-submenu:hover {
+    background-color: #412814;
+    color: white;
+}
+
+.has-submenu:hover .icon-format {
+    filter: brightness(0) invert(1); /* Makes the image white on hover */
+}
+
+.icon-format{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.subitems-list {
+    width: 20%;
+    padding-top: 20px;
+    padding-right: 15px !important;
+    padding-left: 25px !important;
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0.45px;
+    color: #412814;
+    opacity: 1;
+    max-height: 300px;
+}
+
+.subitems-list ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.si-list {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+/* second menu's figure */
+.subitems-imgs {
+    width: 80%;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-left: 15px;
+}
+
+.figure {
+    flex: 1;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.figure img {
+    width: 100%;
+    height: auto;
+}
+
+.figure-caption {
+    text-align: left;
+    font: normal normal normal 12px/17px Roboto;
+    letter-spacing: 0px;
+    color: #412814;
+    opacity: 1;
+}
+
+.social-icon{
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    opacity: 1;
+}
+
+/* ------------------------------ */
+
+@media only screen and (max-width: 1100px) {
+    .Main-Content{
+        padding: 0;
+        margin: 0;
+    }
+    .container-lg{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .social-icon{
+        display: none;
+    }
+}
