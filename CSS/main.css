@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.bg-customBrown {
+    background-color: #412814;
+}
+
 .Main-Content {
-    width: 100%; /* Ensures the Main-Content div respects the 106px left padding */
-    height: auto; /* Full screen height */
-    padding-right: 0; /* Ensure no extra padding on the right */
+    width: 100%;
+    height: auto;
+    padding-right: 0;
     margin: 0;
     display: block;
-    box-sizing: border-box; /* Include padding within the width */
+    box-sizing: border-box;
     padding-left: 106px;
 
 }
@@ -25,12 +32,14 @@
     background-color: #ffffff;
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Helps prevent any overflow issues */
+    box-sizing: border-box;
+    /* Helps prevent any overflow issues */
 }
 
-.offcanvas-body, .offcanvas-footer {
+.offcanvas-body,
+.offcanvas-footer {
     padding: 0 !important;
-    margin: 0 !important; 
+    margin: 0 !important;
 }
 
 /* hides and positions the side bar menu */
@@ -49,7 +58,8 @@
 }
 
 .has-submenu a {
-    display: inline-block; /* Make the <a> tag behave like a block element */
+    display: inline-block;
+    /* Make the <a> tag behave like a block element */
 }
 
 
@@ -65,10 +75,11 @@
 }
 
 .has-submenu:hover .icon-format {
-    filter: brightness(0) invert(1); /* Makes the image white on hover */
+    filter: brightness(0) invert(1);
+    /* Makes the image white on hover */
 }
 
-.icon-format{
+.icon-format {
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -129,27 +140,250 @@
     opacity: 1;
 }
 
-.social-icon{
+.social-icon {
     margin-top: 10px;
     width: 35px;
     height: 35px;
     opacity: 1;
 }
 
+/* Main Content / Articles Css  */
+.icon-title-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.sub-icon-title {
+    text-align: left;
+    font: normal normal bold 14px/17px Roboto;
+    letter-spacing: 0px;
+    color: #412814;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.sub-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2%;
+    border-right: 1px solid #412814;
+    padding-right: 2%;
+}
+
+.sub-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.sub-title1 {
+    margin: 0;
+    text-align: left;
+    font: normal normal bold 30px/36px Barlow;
+    letter-spacing: 0px;
+    color: #412814;
+    text-transform: uppercase;
+}
+
+.sub-description {
+    /* UI Properties */
+
+    text-align: left;
+    font: normal normal normal 16px/23px Roboto;
+    letter-spacing: 0px;
+    color: #4E3C2D;
+    opacity: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+
+/* ---------------------------- */
+/* Image Splide CSS */
+
+.splide__slide {
+    img {
+        width: 100%;
+        height: 411px;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+.carousel {
+    width: 100%;
+    max-width: 1700px;
+    height: 411px;
+
+    border: 1px solid #AFAFAF;
+    opacity: 1;
+    margin: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.col-md-6 {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.cust-button-carousel,
+.title1,
+.title2,
+.description {
+    text-align: left;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.title1 {
+    font: normal normal bold 35px/50px Barlow;
+    letter-spacing: 0px;
+    color: #412814;
+    text-transform: uppercase;
+    opacity: 1;
+    font-size: 1em;
+}
+
+.title2 {
+    font: normal normal bold 35px/50px Barlow;
+    letter-spacing: 0px;
+    color: #412814;
+    text-transform: uppercase;
+    opacity: 1;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.description {
+    font: normal normal normal 16px/23px Roboto;
+    letter-spacing: 0px;
+    color: #4E3C2D;
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .cust-button,
+    .title1,
+    .title2,
+    .description {
+        text-align: center;
+    }
+
+    .carousel {
+        height: auto;
+        border: none;
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .col-md-6 img {
+        height: 411px;
+        max-width: 100%;
+    }
+}
+
 /* ------------------------------ */
 
+/* Youtube Splide CSS*/
+
+.carousel-vid-title {
+    /* UI Properties */
+    text-align: center;
+    font: normal normal bold 25px/30px Roboto;
+    letter-spacing: 0px;
+    color: #412814;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.splide-vid {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Adjust the iframe size to fit within the custom dimensions */
+.splide-vid .splide__slide iframe {
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+/* Instagram Splide CSS*/
+
+.carousel-vid-title-IG {
+    font: normal normal bold 25px/30px Roboto;
+    letter-spacing: 0px;
+    color: #412814;
+    text-transform: uppercase;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.carousel-vid-title-IG .icon {
+    width: 20px;
+    height: auto;
+}
+
+
+.splide-ig {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Adjust the iframe size to fit within the custom dimensions */
+.splide-ig .splide__slide iframe {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+
 @media only screen and (max-width: 1100px) {
-    .Main-Content{
+    .Main-Content {
         padding: 0;
         margin: 0;
     }
-    .container-lg{
+
+    .container-lg {
         display: none;
     }
 }
 
 @media only screen and (max-width: 1300px) {
-    .social-icon{
+    .social-icon {
         display: none;
     }
 }

@@ -13,9 +13,37 @@ document.addEventListener('DOMContentLoaded', function () {
         new Splide(elms2[i], {
             type     : 'slide',   // Set the type of the carousel
             perPage  : 3,         // Number of videos to show at once
-            perMove  : 1,         // Number of slides to move at a time
+            perMove  : 3,
+            breakpoints: {
+                1200: {
+                      perPage: 1,
+                      perMove  : 1
+                  },
+            },         // Number of slides to move at a time
             pagination: false,    // Hide pagination if not needed
-            gap      : '1rem'     // Optional: Set gap between the videos
+        }).mount();
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var elms3 = document.getElementsByClassName('splide-ig');
+
+    for (var i = 0; i < elms3.length; i++) {
+        new Splide(elms3[i], {
+            type     : 'slide',   // Set the type of the carousel
+            perPage  : 4,         // Number of videos to show at once
+            perMove  : 4,
+            breakpoints: {
+                1200: {
+                      perPage: 2,
+                      perMove  : 2
+                  },
+                  800: {
+                    perPage: 1,
+                    perMove  : 1
+                },
+            },         // Number of slides to move at a time
+            pagination: false,    // Hide pagination if not needed
         }).mount();
     }
 });

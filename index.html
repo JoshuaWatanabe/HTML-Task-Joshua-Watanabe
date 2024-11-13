@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Task - Joshua Watanabe</title>
     <link rel="stylesheet" href="CSS/main.css" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -18,6 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="JavaScript/main.js"></script>
 
@@ -220,16 +221,354 @@
                 <div class="splide splide-img">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li class="splide__slide"><img src="Assets/img-header.png" class="img-fluid w-100"
-                                    alt="Left image"></li>
-                            <li class="splide__slide"><img src="Assets/img-header.png" class="img-fluid w-100"
-                                    alt="Left image"></li>
+                            <li class="splide__slide">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h1 class="title1">ARTICLE DU MOMENT</h1>
+                                        <h2 class="title2">3 IDÉES DE VACANCES INSOLITES</h2>
+                                        <p class="description">Traditionnellement, le Sud-Ouest de la France regroupe
+                                            une vaste zone
+                                            délimitée par
+                                            l’océan Atlantique au niveau du golfe de Gasgogne à l’ouest, la frontière
+                                            avec l’Espagne
+                                            au sud, la mer Méditerranée ou le Rhône au sud-est. Au nord, le seuil est
+                                            généralement
+                                            marqué par le pays saintongeais, le Limousin et l’Auvergne. Ces territoires,
+                                            très
+                                            différents tant par leur géographie que leur patrimoine historique, culturel
+                                            ou
+                                            architectural, abritent des villes magnifiques à découvrir entre le
+                                            Bordelais,
+                                            la Gascogne, le Pays basque et l’Occitanie.</p>
+                                        <div class="cust-button-carousel">
+                                            <button
+                                                class="group bg-customBrown text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                                                <span>Je découvre</span>
+
+                                                <div
+                                                    class="transition duration-300 ease-in-out transform group-hover:translate-x-2">
+                                                    <svg class="w-4 h-4 ml-2 mt-1 text-gray-800 dark:text-white"
+                                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                        height="24" fill="none" viewBox="0 0 24 24">
+                                                        <path stroke="currentColor" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-width="4" d="m9 5 7 7-7 7" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="Assets/Splidejs1.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h1 class=" title1">ARTICLE DU MOMENT</h1>
+                                        <h2 class="title2">TOP 7 DES RANDONNÉES À FAIRE EN AUTOMNE</h2>
+                                        <p class="description">Traditionnellement, le Sud-Ouest de la France regroupe
+                                            une vaste zone
+                                            délimitée par
+                                            l’océan Atlantique au niveau du golfe de Gasgogne à l’ouest, la frontière
+                                            avec l’Espagne
+                                            au sud, la mer Méditerranée ou le Rhône au sud-est. Au nord, le seuil est
+                                            généralement
+                                            marqué par le pays saintongeais, le Limousin et l’Auvergne. Ces territoires,
+                                            très
+                                            différents tant par leur géographie que leur patrimoine historique, culturel
+                                            ou
+                                            architectural, abritent des villes magnifiques à découvrir entre le
+                                            Bordelais,
+                                            la Gascogne, le Pays basque et l’Occitanie.</p>
+                                        <div class="cust-button-carousel">
+                                            <button
+                                                class="group bg-customBrown text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                                                <span>Je découvre</span>
+
+                                                <div
+                                                    class="transition duration-300 ease-in-out transform group-hover:translate-x-2">
+                                                    <svg class="w-4 h-4 ml-2 mt-1 text-gray-800 dark:text-white"
+                                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                        height="24" fill="none" viewBox="0 0 24 24">
+                                                        <path stroke="currentColor" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-width="4" d="m9 5 7 7-7 7" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="Assets/Splidejs2.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="container">
+            <div class="row content">
+                <div class="col-6 d-flex flex-column align-items-center">
+                    <div class="box text-center">
+                        <img src="Assets/1.png" alt="Footer Image" class="img-fluid mb-2">
+
+                        <div class="icon-title-container">
+                            <div class="sub-icon">
+                                <img src="Assets/MenuIcons/Icon1.png" alt="Menu Icon" class="img-fluid mb-2">
+                                <span class="sub-icon-title">BOUGER</span>
+                            </div>
+
+                            <h1 class="sub-title1">SPORTS DE GLISSE : LES MEILLEURS SPOTS DU SUD-OUEST</h1>
+                        </div>
+
+                        <p class="sub-description">
+                            Sur leur façade atlantique, les départements de la Gironde, des Landes et des
+                            Pyrénées-Atlantiques sur la côte basque, sont baignés par des vagues mythiques.
+                            Pas étonnant que cette partie de l’Aquitaine regorge d’endroits pour y
+                            pratiquer le surf, le ski nautique ou leurs techniques apparentées (bodyboard,
+                            bodysurf, skimboard, wakeboard, paddle, kitesurf…). Du cap Ferret à
+                            Saint-Jean-de-Luz, découvrez les meilleurs spots pour vous adonner à vos sports
+                            de glisse d’eau favoris !
+                        </p>
+
+                    </div>
+                    <div class="cust-button">
+                        <button
+                            class="group bg-customBrown text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                            <span>Lire l'article</span>
+
+                            <div class="transition duration-300 ease-in-out transform group-hover:translate-x-2">
+                                <svg class="w-4 h-4 ml-2 mt-1 text-gray-800 dark:text-white" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="4" d="m9 5 7 7-7 7" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 d-flex flex-column align-items-center">
+                    <div class="box text-center">
+                        <img src="Assets/2.png" alt="Footer Image" class="img-fluid mb-2">
+
+                        <div class="icon-title-container">
+                            <div class="sub-icon">
+                                <img src="Assets/MenuIcons/Icon2.png" alt="Menu Icon" class="img-fluid mb-2">
+                                <span class="sub-icon-title">EXPLORER</span>
+                            </div>
+
+                            <h1 class="sub-title1"> 5 VILLES EMBLÉMATIQUES À VISITER DANS LE SUD-OUEST </h1>
+                        </div>
+
+                        <p class="sub-description">
+                            Traditionnellement, le Sud-Ouest de la France regroupe une vaste zone délimitée par
+                            l’océan Atlantique
+                            au niveau du golfe de Gasgogne à l’ouest, la frontière avec l’Espagne au sud, la mer
+                            Méditerranée ou
+                            le Rhône au sud-est. Au nord, le seuil est généralement marqué par le pays
+                            saintongeais, le Limousin
+                            et l’Auvergne. Ces territoires, très différents tant par leur géographie que leur
+                            patrimoine historique,
+                            culturel ou architectural, abritent des villes magnifiques à découvrir entre le
+                            Bordelais, la Gascogne,
+                            le Pays basque et l’Occitanie.
+                        </p>
+
+                    </div>
+                    <div class="cust-button">
+                        <button
+                            class="group bg-customBrown text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                            <span>Lire l'article</span>
+
+                            <div class="transition duration-300 ease-in-out transform group-hover:translate-x-2">
+                                <svg class="w-4 h-4 ml-2 mt-1 text-gray-800 dark:text-white" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="4" d="m9 5 7 7-7 7" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row content">
+                <div class="col-6 d-flex flex-column align-items-center">
+                    <div class="box text-center">
+                        <img src="Assets/3.png" alt="Footer Image" class="img-fluid mb-2">
+
+                        <div class="icon-title-container">
+                            <div class="sub-icon">
+                                <img src="Assets/MenuIcons/Icon3.png" alt="Menu Icon" class="img-fluid mb-2">
+                                <span class="sub-icon-title">MANGER</span>
+                            </div>
+
+                            <h1 class="sub-title1">RECETTES : 3 SPÉCIALITÉS DU SUD-OUEST</h1>
+                        </div>
+
+                        <p class="sub-description">
+                            Vaste région englobant, entre autres, le Bordelais, la Gascogne, ou encore le Pays
+                            basque,
+                            le Sud-Ouest est riche d’une gastronomie de terroir par excellence. Volailles
+                            fermières de
+                            Gascogne ou des Landes, foie gras du Sud-Ouest, fromages basques et piment
+                            d’Espelette,
+                            eaux-de-vie et vins de Cahors ou de Bordeaux, pruneau d’Agen… ces spécialités, dont
+                            la
+                            liste est loin d’être exhaustive, entrent dans la composition de nombreuses recettes
+                            gourmandes. Découvrez-en une sélection pour vous régaler d’un menu « entrée, plat,
+                            dessert
+                            » aux saveurs authentiques.
+                        </p>
+
+                    </div>
+                    <div class="cust-button">
+                        <button
+                            class="group bg-customBrown text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                            <span>Lire l'article</span>
+
+                            <div class="transition duration-300 ease-in-out transform group-hover:translate-x-2">
+                                <svg class="w-4 h-4 ml-2 mt-1 text-gray-800 dark:text-white" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="4" d="m9 5 7 7-7 7" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 d-flex flex-column align-items-center">
+                    <div class="box text-center">
+                        <img src="Assets/4.png" alt="Footer Image" class="img-fluid mb-2">
+
+                        <div class="icon-title-container">
+                            <div class="sub-icon">
+                                <img src="Assets/MenuIcons/Icon4.png" alt="Menu Icon" class="img-fluid mb-2">
+                                <span class="sub-icon-title">CRÉER</span>
+                            </div>
+
+                            <h1 class="sub-title1"> UPCYCLING : 3 OBJETS DÉCO AVEC DES PINCES À LINGE </h1>
+                        </div>
+
+                        <p class="sub-description">
+                            Détourner un objet pour en créer un autre très utile est parfois d’une simplicité
+                            déconcertante.
+                            C’est le cas avec les pinces à linge en bois, faciles à trouver et d’un coût
+                            modique. Avec un
+                            peu de colle et de patience, elles servent de matériau de base pour toutes sortes de
+                            créations
+                            à personnaliser à l’envi. Découvrez trois idées à faire et à refaire pour soi-même
+                            ou à offrir !
+                        </p>
+
+                    </div>
+                    <div class="cust-button">
+                        <button
+                            class="group bg-customBrown text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                            <span>Lire l'article</span>
+
+                            <div class="transition duration-300 ease-in-out transform group-hover:translate-x-2">
+                                <svg class="w-4 h-4 ml-2 mt-1 text-gray-800 dark:text-white" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="4" d="m9 5 7 7-7 7" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row content">
+                <div class="col-6 d-flex flex-column align-items-center">
+                    <div class="box text-center">
+                        <img src="Assets/5.png" alt="Footer Image" class="img-fluid mb-2">
+
+                        <div class="icon-title-container">
+                            <div class="sub-icon">
+                                <img src="Assets/MenuIcons/Icon5.png" alt="Menu Icon" class="img-fluid mb-2">
+                                <span class="sub-icon-title">S'HABILLER</span>
+                            </div>
+
+                            <h1 class="sub-title1">4 LOOKS SPÉCIAL ÉTÉ !</h1>
+                        </div>
+
+                        <p class="sub-description">
+                            Bermudas, débardeurs, shorts, tee-shirts, maillots de bain … toutes ces pièces
+                            estivales sont dans vos armoires pour l’été. Mais comment les accorder et quel
+                            look adopter ? Découvrez nos looks incontournables à porter en vacances pour
+                            être au top en toutes circonstances !
+                        </p>
+
+                    </div>
+                    <div class="cust-button">
+                        <button
+                            class="group bg-customBrown text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                            <span>Lire l'article</span>
+
+                            <div class="transition duration-300 ease-in-out transform group-hover:translate-x-2">
+                                <svg class="w-4 h-4 ml-2 mt-1 text-gray-800 dark:text-white" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="4" d="m9 5 7 7-7 7" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 d-flex flex-column align-items-center">
+                    <div class="box text-center">
+                        <img src="Assets/6.png" alt="Footer Image" class="img-fluid mb-2">
+
+                        <div class="icon-title-container">
+                            <div class="sub-icon">
+                                <img src="Assets/MenuIcons/Icon6.png" alt="Menu Icon" class="img-fluid mb-2">
+                                <span class="sub-icon-title">SHOPPING</span>
+                            </div>
+
+                            <h1 class="sub-title1"> NOUVELLE COLLECTION : OFFRE SPÉCIALE </h1>
+                        </div>
+
+                        <p class="sub-description">
+                            Haut-lieu historique du catharisme — mouvement chrétien dissident de l’Église
+                            romaine —
+                            Albi se dote de cette cathédrale au XIIIe siècle pour renforcer le rôle de la foi
+                            catholique face à l’hérésie cathare. Formant un ensemble avec la cathédrale, le
+                            palais
+                            de la Berbie, ancien palais des évêques, abrite le musée Toulouse-Lautrec. De
+                            renommée
+                            internationale, il renferme la plus importe collection publique au monde d’œuvres
+                            du peintre Henri Toulouse-Lautrec (1864-1901), natif d’Albi. Caractéristiques des
+                            jardins classiques à la française, les jardins du palais épiscopal de la Berbie,
+                            eux aussi incontournables, offrent des vues uniques.
+                        </p>
+
+                    </div>
+                    <div class="cust-button">
+                        <button
+                            class="group bg-customBrown text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                            <span>Lire l'article</span>
+
+                            <div class="transition duration-300 ease-in-out transform group-hover:translate-x-2">
+                                <svg class="w-4 h-4 ml-2 mt-1 text-gray-800 dark:text-white" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="4" d="m9 5 7 7-7 7" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="carousel-vid-title">DÉCOUVREZ NOS VIDÉOS</div>
             <div class="col-12 d-flex justify-content-center">
                 <div class="splide splide-vid">
                     <div class="splide__track">
@@ -275,7 +614,46 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-2">
+            <div class="carousel-vid-title-IG">
+                <img src="Assets/MenuIcons/IconI.png" alt="Instagram Icon" class="icon">
+                REJOIGNEZ-NOUS SUR INSTAGRAM
+                <span style="font-size: 15px; font-weight: normal;">#Atlasformen</span>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <div class="splide splide-ig">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </li>
+                            <li class="splide__slide">
+                                <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </li>
+                            <li class="splide__slide">
+                                <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </li>
+                            <li class="splide__slide">
+                                <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
             <div class="col-6 d-flex justify-content-center">
                 <img src="Assets/img-header.png" class="img-fluid w-100" alt="Left image">
             </div>
