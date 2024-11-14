@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <div class="container-lg text-center" style="padding: 0;">
+    <div class="container-lg text-center" id="Container-Sidebar" style="padding: 0;">
         <div class="side-bar offcanvas offcanvas-start show" data-bs-scroll="true" data-bs-backdrop="false"
             tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
             <div class="offcanvas-head">
@@ -213,7 +213,13 @@
             </div>
         </div>
     </div>
+
     <div class="Main-Content">
+        <div class="Menu-Icon-Toggle" style="right: 0; position: absolute;">
+            <img src="Assets/MenuIcons/MenuIcon.png" alt="Toggle Sidebar" class="toggle-sidebar-icon"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"
+                style="cursor: pointer;">
+        </div>
         <div class="row">
             <div class="col-12 d-flex justify-content-center Header-logo">
                 <img src="Assets/LOGO-lg-removebg-preview.png" alt="Header Image" class="responsive-img">

@@ -8,6 +8,9 @@ body {
     overflow-x: hidden;
 }
 
+.Menu-Icon-Toggle{
+    display: none;
+}
 
 .bg-customBrown {
     background-color: #412814;
@@ -279,6 +282,7 @@ body {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     overflow: hidden;
 }
 
@@ -664,8 +668,12 @@ body {
         margin: 0;
     }
 
-    .container-lg {
-        display: none;
+    #Container-Sidebar {
+        display: none; /* Hide the sidebar on smaller screens */
+    }
+
+    .Menu-Icon-Toggle {
+        display: block; /* Show the toggle button on smaller screens */
     }
 
     .row {
