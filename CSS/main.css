@@ -357,48 +357,6 @@ body {
     margin-bottom: 30px;
 }
 
-@media (max-width: 760px) {
-
-    .cust-button-carousel,
-    .title1,
-    .title2,
-    .description {
-        text-align: center;
-    }
-
-    .carousel {
-        height: auto;
-        border: none;
-    }
-
-    .row {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .col-md-6 {
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
-    .col-md-6 img {
-        height: 411px;
-        max-width: 100%;
-    }
-
-    .sub-icon img {
-        width: auto;
-        /* Keep the width in proportion */
-        height: 50px;
-        /* Set a fixed height, adjust as needed */
-        max-width: 100%;
-        /* Make sure the image doesn't overflow */
-        object-fit: contain;
-        /* Prevent the image from being stretched */
-    }
-}
 
 /* ------------------------------ */
 
@@ -464,6 +422,245 @@ body {
     margin: 0 auto;
 }
 
+/* Footer CSS */
+
+.footer-container {
+    position: relative;
+    width: 100%;
+    background-color: #412814;
+}
+
+.footer-row-stack {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.footer-logo img {
+    max-width: 35%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-email-icon-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.email-logo {
+    height: 30px;
+    width: 30px;
+    margin-right: 30px;
+}
+
+.footer-title {
+    text-align: center;
+    font: normal normal bold 22px/27px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.footer-mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-text2 {
+    text-align: center;
+    font: normal normal normal 14px/24px Roboto;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
+}
+
+.footer-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.footer-email-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.footer-notice {
+    padding-top: 10px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #AFAFAF;
+    opacity: 1;
+
+}
+
+.footer-contact {
+    text-align: left;
+    font: normal normal normal 14px/35px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.footer-socials {
+    display: none;
+    align-items: center;
+}
+
+.footer-socials svg {
+    margin-right: 10px;
+}
+
+.footer-socials svg:last-child {
+    margin-right: 0;
+}
+
+.footer-list {
+    /* UI Properties */
+
+    text-align: center;
+    font: normal normal bold 16px/35px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+/* -------------- */
+@media (max-width: 768px) {
+
+    .cust-button-carousel,
+    .title1,
+    .title2,
+    .description {
+        text-align: center;
+    }
+
+    .carousel {
+        height: auto;
+        border: none;
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .col-md-6 img {
+        height: 411px;
+        max-width: 100%;
+    }
+
+    .sub-icon img {
+        width: auto;
+        /* Keep the width in proportion */
+        height: 50px;
+        /* Set a fixed height, adjust as needed */
+        max-width: 100%;
+        /* Make sure the image doesn't overflow */
+        object-fit: contain;
+        /* Prevent the image from being stretched */
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-row-stack {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-logo .container {
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+        justify-content: center;
+        gap: 10px; /* Space between items */
+        width: 100vh !important;
+        padding: 0 !important;
+        margin: 0;
+    }
+
+    /* Center-align text */
+    .footer-list {
+        flex: 1 1 45%; /* Allows each item to take up about 45% of the row */
+        min-width: 150px; /* Prevents items from becoming too narrow */
+        text-align: center;
+        padding: 10px;
+        white-space: nowrap; /* Prevents text from breaking to a new line */
+    }
+    .footer-socials {
+        display: flex;
+        align-items: center;
+        padding-top: 15px;
+    }
+    
+    .footer-email-icon-text,
+    .footer-mail {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100% !important;
+    }
+
+    .footer-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100% !important;
+    }
+
+    .footer-email-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .cust-button-email {
+        width: 100%;
+    }
+
+    .footer-notice,
+    .footer-contact {
+        width: 100%;
+        text-align: center;
+    }
+}
 
 @media only screen and (max-width: 1100px) {
     .Main-Content {
@@ -484,10 +681,20 @@ body {
         top: 1%;
     }
 
+    .col-md-6 img {
+        height: auto;
+    }
+
 }
 
 @media only screen and (max-width: 1300px) {
     .social-icon {
         display: none;
+    }
+}
+
+@media only screen and (min-width: 2500px) {
+    .carousel {
+        border: none;
     }
 }
