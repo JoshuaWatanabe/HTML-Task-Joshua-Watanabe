@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     for (var i = 0; i < elms2.length; i++) {
         new Splide(elms2[i], {
-            type     : 'slide',   // Set the type of the carousel
-            perPage  : 3,         // Number of videos to show at once
-            perMove  : 3,
+            type: 'slide',   // Set the type of the carousel
+            perPage: 3,         // Number of videos to show at once
+            perMove: 3,
             breakpoints: {
                 1200: {
-                      perPage: 1,
-                      perMove  : 1
-                  },
+                    perPage: 1,
+                    perMove: 1
+                },
             },         // Number of slides to move at a time
             pagination: false,    // Hide pagination if not needed
         }).mount();
@@ -30,20 +30,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
     for (var i = 0; i < elms3.length; i++) {
         new Splide(elms3[i], {
-            type     : 'slide',   // Set the type of the carousel
-            perPage  : 4,         // Number of videos to show at once
-            perMove  : 4,
+            type: 'slide',   // Set the type of the carousel
+            perPage: 4,         // Number of videos to show at once
+            perMove: 4,
             breakpoints: {
                 1200: {
-                      perPage: 2,
-                      perMove  : 2
-                  },
-                  800: {
+                    perPage: 2,
+                    perMove: 2
+                },
+                800: {
                     perPage: 1,
-                    perMove  : 1
+                    perMove: 1
                 },
             },         // Number of slides to move at a time
             pagination: false,    // Hide pagination if not needed
         }).mount();
     }
 });
+function toggleSidebar() {
+    const sidebar = document.getElementById('Container-Sidebar');
+    sidebar.classList.toggle('show');
+    const sidebar2 = document.querySelector('.side-bar');
+    sidebar2.classList.toggle('toggled');
+}

@@ -8,8 +8,12 @@ body {
     overflow-x: hidden;
 }
 
-.Menu-Icon-Toggle{
+.Menu-Icon-Toggle {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
 }
 
 .bg-customBrown {
@@ -85,7 +89,6 @@ body {
 
 .has-submenu a {
     display: inline-block;
-    /* Make the <a> tag behave like a block element */
 }
 
 
@@ -530,7 +533,7 @@ body {
 }
 
 .footer-socials svg {
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 .footer-socials svg:last-child {
@@ -669,11 +672,30 @@ body {
     }
 
     #Container-Sidebar {
-        display: none; /* Hide the sidebar on smaller screens */
+        width: 0;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #Container-Sidebar.show {
+        width: 100%;
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .side-bar.toggled {
+        width: 100% !important;
+        height: 100% !important;
+        overflow-y: auto;
+        position: fixed;
+        padding: 0;
     }
 
     .Menu-Icon-Toggle {
-        display: block; /* Show the toggle button on smaller screens */
+        display: block;
+        /* Show the toggle button on smaller screens */
     }
 
     .row {
