@@ -9,12 +9,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -37,10 +32,14 @@
         <div class="side-bar offcanvas offcanvas-start show" data-bs-scroll="true" data-bs-backdrop="false"
             tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
             <div class="offcanvas-head">
+                <div class="Menu-Icon-Toggle2">
+                    <img src="Assets/MenuIcons/IconX.png" alt="Toggle Sidebar" class="toggle-sidebar-icon"
+                        onclick="toggleSidebar();">
+                </div>
                 <div class="has-submenu" style="height: 50px; margin: 0; padding: 0;">
                     <a href="#" class="searchbar-menu">
                         <div class="mx-auto w-1/2">
-                            <div class="submenu" style="width: 400px; height: 50px; top: 0;">
+                            <div class="submenu" id="submenu1" style="width: 400px; height: 50px; top: 0;">
                                 <div class="search-container">
                                     <input class="search-input" type="text" placeholder="Rechercher">
                                     <span class="search-confirm"> ok </span>
@@ -50,18 +49,18 @@
                     </a>
                     <a href="#">
                         <div class="mx-auto w-1/2">
-                            <img class="icon-format" src="Assets/MenuIcons/Icon0.png">
+                            <img class="icon-format" id="Search-icon" src="Assets/MenuIcons/Icon0.png">
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="offcanvas-body" style="overflow: hidden;">
+            <div class="offcanvas-body">
                 <div class="Main-Menu list-none">
                     <div class="has-submenu">
-                        <div class="submenu">
+                        <div class="submenu" id="submenu-2">
                             <div class="row sub-menu-container">
                                 <div class="col subitems-list">
-                                    <ul>
+                                    <ul class="si-list-container">
                                         <li class="si-list">Randonnée</li>
                                         <li class="si-list">Trail & course</li>
                                         <li class="si-list">Sports d'hiver</li>
@@ -73,37 +72,43 @@
                                 <div class="col-10 subitems-imgs">
                                     <figure class="figure">
                                         <img src="Assets/s1.png" class="figure-img img-fluid rounded" alt="...">
-                                        <figcaption class="figure-caption">Top 10 des plus belles randonnées de
-                                            Corse</figcaption>
+                                        <figcaption class="figure-caption">Top 10 des plus belles randonnées de Corse
+                                        </figcaption>
                                     </figure>
                                     <figure class="figure">
                                         <img src="Assets/s2.png" class="figure-img img-fluid rounded" alt="...">
-                                        <figcaption class="figure-caption">6 activités à faire en famille cet
-                                            été</figcaption>
+                                        <figcaption class="figure-caption">6 activités à faire en famille cet été
+                                        </figcaption>
                                     </figure>
                                     <figure class="figure">
                                         <img src="Assets/s3.png" class="figure-img img-fluid rounded" alt="...">
-                                        <figcaption class="figure-caption">Quelles activités pratiquer en
-                                            Bourgogne ?</figcaption>
+                                        <figcaption class="figure-caption">Quelles activités pratiquer en Bourgogne ?
+                                        </figcaption>
                                     </figure>
                                     <figure class="figure">
                                         <img src="Assets/s4.png" class="figure-img img-fluid rounded" alt="...">
-                                        <figcaption class="figure-caption">Quelles activités pratiquer en
-                                            Normandie ?</figcaption>
+                                        <figcaption class="figure-caption">Quelles activités pratiquer en Normandie ?
+                                        </figcaption>
                                     </figure>
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
-                            <div class="mx-auto w-1/2">
+                        <a href="#" class="menu-item">
+                            <div class="menu-icon">
                                 <img class="icon-format" src="Assets/MenuIcons/Icon1.png">
                             </div>
-                            BOUGER
+
+                            <span class="menutext">BOUGER</span>
+
+                            <div class="Menu-toggle">
+                                <img src="Assets/MenuIcons/max.png" alt="Toggle List" class="toggle-list"
+                                    onclick="toggleList();">
+                            </div>
                         </a>
                     </div>
+
                     <div class="has-submenu">
                         <div class="submenu">
-                            <!-- <a href="#">Product 1</a> -->
                             <div class="row sub-menu-container">
                                 <div class="col subitems-list">
                                     <ul>
@@ -137,42 +142,67 @@
                             </div>
                         </div>
                         <a href="#">
-                            <div class="mx-auto w-1/2">
+                            <div class="menu-icon">
                                 <img class="icon-format" src="Assets/MenuIcons/Icon2.png">
                             </div>
-                            EXPLORER
+
+                            <span class="menutext">EXPLORER</span>
+
+                            <div class="Menu-toggle">
+                                <img src="Assets/MenuIcons/max.png" alt="Toggle List">
+                            </div>
                         </a>
                     </div>
                     <div class="has-submenu">
                         <a href="#">
-                            <div class="mx-auto w-1/2">
+                            <div class="menu-icon">
                                 <img class="icon-format" src="Assets/MenuIcons/Icon3.png">
                             </div>
-                            MANGER
+
+                            <span class="menutext">MANGER</span>
+
+                            <div class="Menu-toggle">
+                                <img src="Assets/MenuIcons/max.png" alt="Toggle List">
+                            </div>
                         </a>
                     </div>
                     <div class="has-submenu">
                         <a href="#">
-                            <div class="mx-auto w-1/2">
+                            <div class="menu-icon">
                                 <img class="icon-format" src="Assets/MenuIcons/Icon4.png">
                             </div>
-                            CRÉER
+
+                            <span class="menutext">CRÉER</span>
+
+                            <div class="Menu-toggle">
+                                <img src="Assets/MenuIcons/max.png" alt="Toggle List">
+                            </div>
                         </a>
                     </div>
                     <div class="has-submenu">
                         <a href="#">
-                            <div class="mx-auto w-1/2">
+                            <div class="menu-icon">
                                 <img class="icon-format" src="Assets/MenuIcons/Icon5.png">
                             </div>
-                            S'HABILLER
+
+                            <span class="menutext">S'HABILLER</span>
+
+                            <div class="Menu-toggle">
+                                <img src="Assets/MenuIcons/max.png" alt="Toggle List">
+                            </div>
                         </a>
                     </div>
                     <div class="has-submenu">
                         <a href="#">
-                            <div class="mx-auto w-1/2">
+                            <div class="menu-icon">
                                 <img class="icon-format" src="Assets/MenuIcons/Icon6.png">
                             </div>
-                            SHOPPING
+
+                            <span class="menutext">SHOPPING</span>
+
+                            <div class="Menu-toggle">
+                                <img src="Assets/MenuIcons/max.png" alt="Toggle List">
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -215,7 +245,6 @@
     </div>
 
     <div class="Main-Content">
-
         <div class="row">
             <div class="col-12 d-flex justify-content-center Header-logo">
                 <img src="Assets/LOGO-lg-removebg-preview.png" alt="Header Image" class="responsive-img">
@@ -228,6 +257,7 @@
             <img src="Assets/MenuIcons/MenuIcon.png" alt="Toggle Sidebar" class="toggle-sidebar-icon"
                 onclick="toggleSidebar();">
         </div>
+        
         <div class="row">
             <div class="col-12 d-flex justify-content-center carousel">
                 <div class="splide splide-img">
@@ -759,7 +789,6 @@
                                 de la livraison offerte ainsi qu'un réduction de 10€* sur votre prochain achat
                                 de produits Atlas for Men !</p>
 
-                            <!-- Flex container for input and button -->
                             <div class="footer-form">
                                 <input class="footer-email-input" type="text"
                                     placeholder="Saisissez votre adresse e-mail">

@@ -52,4 +52,12 @@ function toggleSidebar() {
     sidebar.classList.toggle('show');
     const sidebar2 = document.querySelector('.side-bar');
     sidebar2.classList.toggle('toggled');
+    const sidebar3 = document.querySelector('html');
+    sidebar3.classList.toggle('toggle-overflow');
+    
+}
+
+function toggleList() {
+    const sidebar4 = document.querySelector('#submenu-2');
+    sidebar4.classList.toggle('list');
 }

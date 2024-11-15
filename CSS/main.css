@@ -13,7 +13,31 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    padding-top: 10px;
+    padding-left: 10px;
     z-index: 50;
+    height: 55px;
+    width: 55px;
+}
+.Menu-Icon-Toggle2{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+    z-index: 50;
+    height: 25px;
+    width: 25px;
+}
+
+.menu-icon {
+    margin: auto;
+    width: 50%;
+}
+
+.Menu-toggle {
+    display: none;
 }
 
 .bg-customBrown {
@@ -37,16 +61,13 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    /* -webkit-filter: drop-shadow(1px 1px 0 #412814)
-                  drop-shadow(-1px -1px 0 #412814);
-  filter: drop-shadow(1px 1px 0 #412814) 
-          drop-shadow(-1px -1px 0 #412814); */
+    /* -webkit-filter: drop-shadow(1px 1px 0 #412814) drop-shadow(-1px -1px 0 #412814);
+    filter: drop-shadow(1px 1px 0 #412814) drop-shadow(-1px -1px 0 #412814); */
 }
 
 /* Responsive logo image */
 .Header-logo img {
     width: 30%;
-    /* Set to a percentage of the container */
     height: auto;
 }
 
@@ -61,7 +82,6 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* Helps prevent any overflow issues */
 }
 
 .offcanvas-body,
@@ -83,7 +103,6 @@ body {
     height: 259px;
     z-index: 1000;
     border: 1px solid #412814;
-
 }
 
 
@@ -228,7 +247,6 @@ body {
     display: block;
     box-sizing: border-box;
     padding-left: 106px;
-
 }
 
 .box {
@@ -671,6 +689,83 @@ body {
         margin: 0;
     }
 
+    .offcanvas-head {
+        background-image: url('/Assets/img-header-mobile.png');
+        background-position: center top;
+        background-size: 100% 100%;
+        /* Stretch image to container size */
+        width: 100% !important;
+        height: 199pt;
+        /* Allows the container to adjust height based on content */
+    }
+
+    .offcanvas-body a {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+        width: 100% !important;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px !important;
+    }
+
+    .menu-item {
+        text-align: left !important;
+    }
+
+    .menutext {
+        margin-left: 10px;
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .menu-icon,
+    .Menu-toggle {
+        margin: 0;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Ensure images inside these containers are responsive and match the size */
+    .menu-icon img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+
+    .Menu-toggle img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+
+    .has-submenu {
+        height: auto;
+        width: auto;
+    }
+
+    .has-submenu:hover .submenu {
+        display: none;
+    }
+
+    /* Reset background color and text color on hover */
+    .has-submenu:hover {
+        background-color: initial;
+        color: initial;
+    }
+
+    /* Reset icon filter */
+    .has-submenu:hover .icon-format {
+        filter: none;
+    }
+
     #Container-Sidebar {
         width: 0;
         visibility: hidden;
@@ -688,14 +783,83 @@ body {
     .side-bar.toggled {
         width: 100% !important;
         height: 100% !important;
-        overflow-y: auto;
         position: fixed;
         padding: 0;
     }
 
+    .subitems-imgs {
+        display: none;
+    }
+
+    .has-submenu {
+        position: relative;
+        margin-bottom: 20px;
+        height: 60px !important;
+    }
+
+    .menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #submenu1 {
+        display: block !important;
+        position: fixed !important;
+        top: 18% !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+        width: auto !important;
+        height: auto !important;
+        bor
+    }
+
+
+    .search-confirm {
+        background-image: url('/Assets/MenuIcons/Icon0.png');
+        background-size: cover;
+        background-position: center;
+        text-indent: -9999px;
+        /* Hides the text (the ok) inside the span */
+    }
+
+    #Search-icon {
+        display: none;
+    }
+
+    .submenu.list {
+        display: block !important;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        border: none;
+    }
+
+    .si-list-container {
+        list-style-type: none;
+        /* Removes bullets */
+        padding: 0;
+        margin: 0;
+    }
+
+    .si-list {
+        padding: 8px 0;
+        text-align: center;
+    }
+
+
+    html.toggle-overflow {
+        overflow-y: hidden;
+    }
+
     .Menu-Icon-Toggle {
         display: block;
-        /* Show the toggle button on smaller screens */
+    }
+    .Menu-Icon-Toggle2 {
+        display: block;
     }
 
     .row {
