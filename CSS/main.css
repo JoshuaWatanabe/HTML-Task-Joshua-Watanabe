@@ -574,35 +574,7 @@ body {
 /* -------------- */
 @media (max-width: 768px) {
 
-    .cust-button-carousel,
-    .title1,
-    .title2,
-    .description {
-        text-align: center;
-    }
-
-    .carousel {
-        height: auto;
-        border: none;
-    }
-
-    .row {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .col-md-6 {
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
-    .col-md-6 img {
-        height: 411px;
-        max-width: 100%;
-    }
-
+    
     .sub-icon img {
         width: auto;
         height: 50px;
@@ -688,6 +660,37 @@ body {
         padding: 0;
         margin: 0;
     }
+
+    .cust-button-carousel,
+    .title1,
+    .title2,
+    .description {
+        text-align: center;
+    }
+
+    .carousel {
+        height: auto;
+        border: none;
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .col-md-6 img {
+        height: 411px;
+        max-width: 100%;
+    }
+
 
     .offcanvas-head {
         background-image: url('/Assets/img-header-mobile.png');
