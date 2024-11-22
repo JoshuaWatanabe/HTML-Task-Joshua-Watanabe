@@ -419,21 +419,23 @@ body {
     position: relative;
 }
 
-  /* Custom Previous Arrow */
-  .splide__arrow--prev {
-    left: -45px !important; /* Adjust the distance from the left */
+/* Custom Previous Arrow */
+.splide__arrow--prev {
+    left: -45px !important;
+    /* Adjust the distance from the left */
     width: 40px !important;
     height: 40px !important;
-  }
-  
-  /* Custom Next Arrow */
-  .splide__arrow--next {
-    right: -45px !important; /* Adjust the distance from the right */
+}
+
+/* Custom Next Arrow */
+.splide__arrow--next {
+    right: -45px !important;
+    /* Adjust the distance from the right */
     width: 40px !important;
     height: 40px !important;
-  }
-  
-  
+}
+
+
 
 .col-md-6 {
     width: 50%;
@@ -601,6 +603,11 @@ body {
     margin-bottom: 5px;
 }
 
+.ig-hash {
+    font-size: 15px;
+    font-weight: normal;
+}
+
 /* Footer CSS */
 
 .footer-container {
@@ -672,6 +679,7 @@ body {
     gap: 10px;
     width: 100%;
     max-width: 600px;
+    padding-left: 100px !important;
 }
 
 .footer-email-input {
@@ -722,10 +730,11 @@ body {
 .footer-socials {
     display: none;
     align-items: center;
+    padding-bottom: 30px !important;
 }
 
 .footer-socials svg {
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .footer-socials svg:last-child {
@@ -746,7 +755,7 @@ body {
 }
 
 /* -------------- */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .Header-Menu {
         top: 0;
         position: fixed;
@@ -777,6 +786,20 @@ body {
         width: 22vh;
         align-items: center !important;
     }
+
+    /* Custom Previous Arrow */
+    .splide__arrow--prev {
+        margin-top: 100px !important;
+        left: -5px !important;
+    }
+
+    /* Custom Next Arrow */
+    .splide__arrow--next {
+        margin-top: 100px !important;
+        right: -5px !important;
+    }
+
+
 
     .sub-title1 {
         width: 100%;
@@ -816,7 +839,7 @@ body {
         border-radius: 10px;
     }
 
-    
+
     .footer-container {
         display: flex;
         flex-direction: column;
@@ -828,14 +851,24 @@ body {
     .footer-row-stack {
         flex-direction: column;
         align-items: center;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
+    .footer-title {
+        width: 100% !important;
+        font-size: 20px !important;
+        padding-top: 5px !important;
+    }
+    .col-6{
+        width: 100% !important;
+    }
     .footer-logo .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
-        width: 100vh !important;
+        width: 100% !important;
         padding: 0 !important;
         margin: 0;
     }
@@ -861,17 +894,21 @@ body {
     }
 
     .footer-logo {
-        display: flex;
+        display:flex;
         flex-direction: column;
         align-items: center;
         width: 100% !important;
         padding: 0 !important;
+        padding-right: 0 !important;
         margin: 0 !important;
+        
     }
 
-    .footer-logo img{
-        width: 100% !important;
-        height: 10vh !important;
+    .footer-logo img {
+        max-width: 100%;
+        text-align: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     .footer-form {
@@ -879,45 +916,49 @@ body {
         flex-direction: column;
         align-items: center;
         width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0 !important;
     }
 
     .footer-email-input {
         width: 100%;
         margin-bottom: 10px;
     }
-
-    .cust-button-email {
-        width: 100%;
+    
+    .cust-button-email button {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
     }
 
     .footer-notice,
     .footer-contact {
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
-   
+
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
 
     .vid-name {
         padding: 0px !important;
         text-align: center !important;
     }
-    
+
     .carousel-vid-title {
         /* UI Properties */
         padding: 0px !important;
         text-align: left;
     }
-    
+
     .splide-vid .splide__track {
         max-width: 100%;
         max-height: 100%;
         height: auto;
         margin: 0 auto;
     }
-    
+
     /* Adjust the iframe size to fit within the custom dimensions */
     .splide-vid .splide__slide iframe {
         width: 60%;
@@ -926,13 +967,21 @@ body {
         padding: 0px;
         margin: 0 auto;
     }
-    .carousel-vid-title-IG{
-        max-width: fit-content !important;
+
+    .carousel-vid-title-IG img {
+        height: 50px !important;
+        width: 50px !important;
     }
-    .carousel-vid-title-IG p{
-        width: 100% !important;
-        font-size: 15px !important;
-        
+
+    .ig-name {
+        padding-top: 15px !important;
+        font-size: 20px !important;
+    }
+
+    .ig-hash {
+        position: static;
+        padding-top: 45px !important;
+        padding-left: auto;
     }
 
     .Main-Content {
@@ -962,13 +1011,14 @@ body {
         padding-right: 0 !important;
     }
 
-    
+
 
     .title1 {
         font: normal normal 500 20px Roboto;
         text-align: center;
-        margin-top: 20px !important;
-        margin-bottom: 40px !important;
+        margin-top: 0 !important;
+        padding: 0 !important;
+        margin-bottom: 20px !important;
         width: 100% !important;
     }
 
@@ -976,7 +1026,7 @@ body {
         text-align: left;
         line-height: 1.2;
         width: 100% !important;
-        font-size: 25px;
+        font-size: 24px;
         height: 40px !important;
     }
 
@@ -1194,7 +1244,7 @@ body {
         height: auto;
     }
 
-    
+
 
 }
 
