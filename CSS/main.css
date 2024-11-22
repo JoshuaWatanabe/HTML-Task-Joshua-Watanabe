@@ -578,10 +578,16 @@ body {
     margin: 0 auto;
 }
 
+.splide-ig{
+    width: 100% !important;
+    max-height: 350px !important;
+}
+
 /* Adjust the iframe size to fit within the custom dimensions */
 .splide-ig .splide__slide iframe {
-    width: 375px;
-    height: 375px;
+    width: 100%;
+    max-height: 350px !important;
+    height: 100% !important;
     padding: 2px;
     margin: 0 auto;
 }
@@ -754,8 +760,19 @@ body {
     padding-right: 10px;
 }
 
+
 /* -------------- */
 @media (max-width: 850px) {
+    /* Ensure the Splide container has proper sizing */
+
+
+/* Adjust iframe or other embedded content within slides */
+.splide-ig .splide__slide iframe {
+    width: 100%; /* Make iframe responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Prevent it from being too tall */
+}
+
     .Header-Menu {
         top: 0;
         position: fixed;

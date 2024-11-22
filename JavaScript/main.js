@@ -40,17 +40,18 @@ document.addEventListener('DOMContentLoaded', function () {
             perMove: 4,
             arrows: false,
             breakpoints: {
-                1200: {
-                    perPage: 2,
-                    perMove: 2
-                },
                 800: {
-                    perPage: 1,
-                    perMove: 1
+                    grid: {
+                        rows: 2,
+                        cols: 2,
+                    },
+                    perPage : 1,
+                    perMove : 1,
+                    width: '100%',
                 },
             },         // Number of slides to move at a time
             pagination: false,    // Hide pagination if not needed
-        }).mount();
+        }).mount(window.splide.Extensions);
     }
 });
 function toggleSidebar() {
