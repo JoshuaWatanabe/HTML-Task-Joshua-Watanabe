@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             perMove: 4,
             arrows: false,
             breakpoints: {
-                800: {
+                850: {
                     grid: {
                         rows: 2,
                         cols: 2,
