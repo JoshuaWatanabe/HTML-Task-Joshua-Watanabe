@@ -578,7 +578,7 @@ body {
     margin: 0 auto;
 }
 
-.splide-ig{
+.splide-ig {
     width: 100% !important;
     max-height: 350px !important;
     height: 100% !important;
@@ -762,16 +762,28 @@ body {
 
 
 /* -------------- */
+@media(max-width: 440px) {
+
+    .container,
+    .justify-content-center {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
 @media (max-width: 850px) {
     /* Ensure the Splide container has proper sizing */
 
 
-/* Adjust iframe or other embedded content within slides */
-.splide-ig .splide__slide iframe {
-    width: 100%; /* Make iframe responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 300px; /* Prevent it from being too tall */
-}
+    /* Adjust iframe or other embedded content within slides */
+    .splide-ig .splide__slide iframe {
+        width: 100%;
+        /* Make iframe responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+        max-height: 300px;
+        /* Prevent it from being too tall */
+    }
 
     .Header-Menu {
         top: 0;
@@ -877,9 +889,11 @@ body {
         font-size: 20px !important;
         padding-top: 5px !important;
     }
-    .col-6{
+
+    .col-6 {
         width: 100% !important;
     }
+
     .footer-logo .container {
         display: flex;
         flex-wrap: wrap;
@@ -911,14 +925,14 @@ body {
     }
 
     .footer-logo {
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         width: 100% !important;
         padding: 0 !important;
         padding-right: 0 !important;
         margin: 0 !important;
-        
+
     }
 
     .footer-logo img {
@@ -941,7 +955,7 @@ body {
         width: 100%;
         margin-bottom: 10px;
     }
-    
+
     .cust-button-email button {
         width: 100% !important;
         display: flex;
@@ -960,6 +974,7 @@ body {
     .splide-ig .splide__slide iframe {
         height: 100% !important;
     }
+
     .vid-name {
         padding: 0px !important;
         text-align: center !important;
@@ -1085,7 +1100,7 @@ body {
         background-size: 100% 100%;
         /* Stretch image to container size */
         width: 100% !important;
-        height: 199pt;
+        height: 180px;
         /* Allows the container to adjust height based on content */
     }
 
@@ -1104,12 +1119,15 @@ body {
 
     .menu-item {
         text-align: left !important;
+        
+        
     }
 
     .menutext {
         margin-left: 10px;
         flex-grow: 1;
         text-align: left;
+        font-size: 28px;
     }
 
     .menu-icon,
@@ -1125,14 +1143,14 @@ body {
 
     /* Ensure images inside these containers are responsive and match the size */
     .menu-icon img {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         object-fit: contain;
     }
 
     .Menu-toggle img {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         object-fit: contain;
     }
 
@@ -1198,13 +1216,17 @@ body {
     #submenu1 {
         display: block !important;
         position: fixed !important;
-        top: 18% !important;
+        top: 8% !important;
         left: 50% !important;
         transform: translateX(-50%);
         width: auto !important;
         height: auto !important;
     }
 
+    .search-input {
+        width: 390.44px !important;
+        height: 50px !important;
+    }
 
     .search-confirm {
         background-image: url('/Assets/MenuIcons/Icon0.png');
@@ -1219,8 +1241,8 @@ body {
     }
 
     .submenu.list {
-        display: block !important;
-        top: 100%;
+        display: inline-block !important;
+        top: 110%;
         left: 50%;
         transform: translateX(-50%);
         width: 80%;
